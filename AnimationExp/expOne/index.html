@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Experiment One</title>
+</head>
+<style>
+    .rect_box{
+        height:100px;
+        width:10px;
+        background-color: red;
+        margin-top:10%;
+        margin-left:20%;
+        animation-name: rotate_box;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite;
+        /* animation-direction: alternate; */
+    }
+
+    @keyframes rotate_box {
+        0% {
+            transform: rotate(0deg);
+        }
+        /* 25%{
+            transform: rotate(45deg);
+        }
+        50%{
+            transform: rotate(90deg);
+        }
+        75%{
+            transform: rotate(1800deg);
+        } */
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+<body>
+    <div class="rect_box"></div>
+</body>
+</html>
